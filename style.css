@@ -81,7 +81,7 @@
 
 .card>.card-content {
     font-size: small;
-    margin-bottom: 64px;
+    margin-bottom: 50px;
 }
 
 .card>.card-content2 {
@@ -177,6 +177,8 @@ a:active {
 
     .card>.card-content {
         font-size: medium;
+        margin-bottom: 63px;
+
     }
 
     .card>.card-content2 {
