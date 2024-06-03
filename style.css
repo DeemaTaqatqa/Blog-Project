@@ -1,0 +1,103 @@
+.container{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 100px 800px 200px;
+   
+    margin: 20px;
+    grid-template-areas: 
+    "hd hd "
+    "main main"
+    "ft ft";
+}
+.header{
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;;
+
+}
+#subscribe{
+    text-decoration: underline;
+    color: rgb(104, 102, 102);
+}
+#blog-title{
+    text-decoration: underline;
+}
+#search{
+    width: 20px;
+    height: 20px;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 250px 250px 250px;
+    gap: 20px;
+    margin: 0px 25px 15px 25px;
+}
+.card{
+
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.card > #Blog-Post{
+    color: blue
+}
+.card > #Post-Title{
+    color: green;
+    margin: 0px;
+}
+
+.footer{
+    grid-area: ft;
+    background-color: #f9f9f9;
+    color: #a2a2a2;
+    display: flex;
+    border-top: 2px solid #ebebeb ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* unvisited link */
+a:link {
+  color: #69acfc;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+@media(min-width:700px) {
+    .container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 800px 200px;
+    border: 1px solid;
+    margin: 20px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "main main main main"
+    "ft ft ft ft";
+    } 
+    .main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 400px 400px ;
+    grid-template-rows: 250px 250px 250px;
+    gap: 20px;
+    margin: 0px 25px 15px 25px;
+}
+}
