@@ -1,0 +1,221 @@
+.container {
+    display: grid;
+    grid-template-columns: 184px 184px;
+    grid-template-rows: 100px 1950px 200px;
+    border: 1px solid;
+    margin: 20px;
+    grid-template-areas:
+        "hd hd"
+        "main main"
+        "ft ft";
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+#subscribe {
+    text-decoration: underline;
+    color: rgb(104, 102, 102);
+    font-size: small;
+    margin-top: 25px;
+}
+
+#blog-title {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+#search {
+    width: 20px;
+    height: 20px;
+    margin-top: 22px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 183px 120px;
+    grid-template-rows: 260px 258px 258px;
+    column-gap: 20px;
+    margin: 10px 10px 10px 15px;
+    padding-left: 7px;
+
+}
+
+.topic h1 {
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+.topic>#date {
+    font-size: small;
+    color: gray;
+    margin-top: 5px;
+}
+
+.main p,
+li,
+a {
+    text-align: initial;
+}
+
+.main p,
+li,
+a {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: small;
+}
+
+.bottom-bordered {
+    border-bottom: 1px rgb(198, 198, 198) solid;
+    padding-bottom: 15px;
+}
+
+.full-bordered {
+    border: 1px rgb(198, 198, 198) solid;
+    padding-bottom: 10px;
+}
+
+div>.example {
+    border: 1px rgb(198, 198, 198) solid;
+}
+
+.filled-background {
+    background-color: rgb(249, 245, 245);
+    padding: 10px;
+    text-align: justify;
+}
+
+.archive>a,
+.elsewhere>a,
+h5 {
+    padding: 10px;
+    display: block;
+    padding: 0px 0px 0px 10px;
+}
+
+.button-enabled {
+    margin-top: 40px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: #69acfc;
+    border: 2px solid #69acfc;
+}
+
+.button-disabled {
+    margin-top: 40px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(198, 198, 198);
+    border: 2px solid rgb(198, 198, 198);
+}
+
+#blog-img {
+    margin: 40px 0px 0px 8px;
+    width: 110px;
+    height: 110px;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #f9f9f9;
+    color: #a2a2a2;
+    display: flex;
+    border-top: 2px solid #ebebeb;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:700px) {
+    .container {
+        grid-template-columns: 355px 355px;
+        grid-template-rows: 90px 1230px 200px;
+        margin: 20px;
+        grid-template-areas:
+            "hd hd "
+            "main main"
+            "ft ft";
+    }
+
+    #subscribe {
+        font-size: medium;
+    }
+
+    #blog-title {
+        font-size: xx-large;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 385px 270px;
+        grid-template-rows: 400px 400px 400px;
+        column-gap: 20px;
+        margin: 10px 10px 10px 15px;
+        padding-left: 7px;
+    }
+
+    #blog-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-width:900px) {
+    .container {
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: 90px 1050px 200px;
+        margin: 20px;
+        grid-template-areas:
+            "hd hd hd hd"
+            "main main main main"
+            "ft ft ft ft";
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 620px 270px;
+        grid-template-rows: 340px 345px 345px;
+        column-gap: 40px;
+        margin: 10px 10px 10px 15px;
+        padding-left: 7px;
+    }
+}
+
+@media(min-width:1400px) {
+    .container {
+        grid-template-columns: 460px 460px 460px;
+        grid-template-rows: 90px 930px 200px;
+        margin: 20px;
+        grid-template-areas:
+            "hd hd hd hd"
+            "main main main main"
+            "ft ft ft ft";
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 950px 350px;
+        grid-template-rows: 300px 300px 300px;
+        column-gap: 40px;
+        margin: 10px 10px 10px 15px;
+        padding-left: 7px;
+    }
+
+    #blog-img {
+        width: 250px;
+        height: 250px;
+    }
+}
