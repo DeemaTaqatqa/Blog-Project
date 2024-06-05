@@ -1,0 +1,27 @@
+/* unvisited link */
+a:link {
+    color: --var(--primary-color);
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+h5 {
+    padding: 10px;
+    display: block;
+    padding: 0px 0px 0px 10px;
+}
+blockquote{
+    font-style: italic;
+}
